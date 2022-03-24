@@ -67,6 +67,14 @@ class TestExceptions(TestCase):
         with self.assertRaises(ImportError):
             exceptions.produce_import_error()
 
+    def test_produce_permission_error(self):
+        with self.assertRaises(PermissionError):
+            exceptions.produce_permission_error()
+
+    def test_produce_is_a_directory_error(self):
+        with self.assertRaises(IsADirectoryError):
+            exceptions.produce_is_a_directory_error()
+
 
 if __name__ == '__main__':
     main()

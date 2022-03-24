@@ -35,54 +35,77 @@ def produce_key_error():
 
 # IndexError
 def produce_index_error():
-    pass
+    my_list = [1, 2, 3, 4, 5]
+    my_list[10]
 
 
 # NameError
 def produce_name_error():
-    pass
+    name = "Test"
+    print(nmae)
 
 
 # UnboundLocalError
 def produce_unbound_local_error():
-    pass
+    print(x)
+    x = 9
 
 
 # TypeError
 def produce_type_error():
-    pass
+    myInt = 100
+    myStr = "10"
+    myResult = myInt / myStr
 
 
 # ValueError
 def produce_value_error():
-    pass
+    new_variable = "Test"
+    print(int(new_variable))
 
 
 # ZeroDivisionError
 def produce_zero_division_error():
-    pass
+    a = 10
+    b = 0
+    c = a/b
 
 
 # OverflowError
 def produce_overflow_error():
+    # while True:
+    #     print("test")
     pass
 
 
 # FileNotFoundError
 def produce_file_not_found_error():
-    pass
+    with open("READYOU.md", 'r') as file:
+        file.write('Hi there!')
 
 
 # UnicodeEncodeError
 def produce_unicode_encode_error():
-    pass
+    f = open('demo.txt', 'w')
+    f.write('να έχεις μια όμορφη μέρα')
+    f.close()
 
 
 # ModuleNotFoundError
 def produce_module_not_found_error():
-    pass
+    import apple
 
 
 # ImportError
 def produce_import_error():
+    from math import apple
+
+
+# PermissionError
+def produce_permission_error():
+    pass
+
+
+# IsADirectoryError
+def produce_is_a_directory_error():
     pass
